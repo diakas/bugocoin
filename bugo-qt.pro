@@ -8,7 +8,7 @@ DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
-#CONFIG += openssl-linked
+# CONFIG += openssl-linked ???
 CONFIG += openssl
 
 greaterThan(QT_MAJOR_VERSION, 4) {
