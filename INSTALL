@@ -15,9 +15,13 @@ git clone https://github.com/diakas/bugocoin.git
 cd bugocoin/src
 
 make -f makefile.unix USE_UPNP=1
+*******************************************************
 
+графический клиент:
+apt-get remove --purge qt4-default qt4-designer qt4-dev-tools qt4-qmake qt4-doc qt4-linguist-tools qtchooser
 
-apt-get install qt4-qmake qt4-dev-tools
+apt-get install qt5-qmake qt5-default qttools5-dev-tools libqt5script5 libqt5scripttools5 qtscript5-dev
+
 
 If you ever encounter the error
 src/leveldb/libleveldb.a: No such file or directory
@@ -31,3 +35,15 @@ and compile again
 
 bugocoin/src/secp256k1/autogen.sh - права запуска!!!! 
 chmod 755 /src/secp256k1/autogen.sh
+
+
+Qt creator!!!!!!!
+
+sudo apt-get install build-essential libgl1-mesa-dev
+sudo apt-get install libqt5webkit5-dev
+
+sudo apt-get install qtcreator
+
+запускаем - выбираем проект bugo-qt.pro
+компилируем!!!!
+
