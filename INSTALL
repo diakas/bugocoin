@@ -29,5 +29,5 @@ chmod 755 *
 cd ..
 and compile again
 
-bugocoin/src/secp256k1/autogen.sh - права!!!!
-
+bugocoin/src/secp256k1/autogen.sh - права запуска!!!! 
+chmod 755 /src/secp256k1/autogen.sh
