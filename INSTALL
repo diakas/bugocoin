@@ -15,3 +15,19 @@ git clone https://github.com/diakas/bugocoin.git
 cd bugocoin/src
 
 make -f makefile.unix USE_UPNP=1
+
+
+apt-get install qt4-qmake qt4-dev-tools
+
+If you ever encounter the error
+src/leveldb/libleveldb.a: No such file or directory
+/src/leveldb/libmemenv.a: No such file or directory
+when compiling do the following:
+
+cd leveldb
+chmod 755 *
+cd ..
+and compile again
+
+bugocoin/src/secp256k1/autogen.sh - права!!!!
+
