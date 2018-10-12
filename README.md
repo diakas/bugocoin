@@ -20,19 +20,35 @@ RPC Port: 22228 ( in reality, any port specified in bugo.conf )
 
 
 bugo.conf 
+
 server=1
+
 rpcuser=bugorpc
+
 rpcpassword=passwbugogo
+
 rpcallowip=127.0.0.1
+
 txindex=1
+
 listen=1
+
 maxconnections=500
+
 rpcport=22228
+
 port=22227
+
 addnode=77.220.214.112:22237
+
 addnode=77.220.214.112:22232
+
 addnode=77.220.214.112:22231
+
 addnode=77.220.214.112:22230
+
 addnode=185.209.20.227:22227
+
 addnode=185.209.20.227:22226
+
 addnode=185.209.20.227:22225
