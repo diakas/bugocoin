@@ -48,3 +48,10 @@ sudo apt-get install qtcreator
 компилируем!!!!
 
 https://habr.com/post/198142/
+
+
+!!!! проверить списки серверов 
+
+ntp.cpp	Refresh ntp servers list
+
+wallet.cpp	Refresh ntp servers list
