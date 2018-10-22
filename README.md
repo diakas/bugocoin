@@ -23,9 +23,9 @@ bugo.conf
 
 server=1
 
-rpcuser=bugorpc
+rpcuser=userrpc
 
-rpcpassword=passwbugogo
+rpcpassword=rpcpassw
 
 rpcallowip=127.0.0.1
 
