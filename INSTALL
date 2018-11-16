@@ -10,13 +10,25 @@ implementation of BUGO.
 
 apt-get install nano git build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev miniupnpc libminiupnpc-dev autoconf pkg-config libtool libgmp-dev autotools-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev automake -y
 
-for 18.04 ----remove ssl-dev & apt-get install libssl1.0-dev Try, before make: mkdir obj obj/zerocoin
-
+for 18.04 ----remove ssl-dev & apt-get install libssl1.0-dev 
 git clone https://github.com/diakas/bugocoin.git
 
 cd bugocoin/src
 
+Try, before make: mkdir obj obj/zerocoin
+
 make -f makefile.unix USE_UPNP=1
+
+If you ever encounter the error
+src/leveldb/libleveldb.a: No such file or directory
+/src/leveldb/libmemenv.a: No such file or directory
+when compiling do the following:
+
+cd leveldb
+chmod 755 *
+cd ..
+and compile again
+
 *******************************************************
 
 графический клиент:
